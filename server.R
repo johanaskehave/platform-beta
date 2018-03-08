@@ -8,6 +8,9 @@ server <- function(session, input, output) {
   
   output$plot1 <- renderPlotly({
     
+    
+    # Model -------------------------------------------------------------------
+    
     frokostpause <- input$slider0
     vakst <- input$slider01
     elasticitet <- input$slider02
@@ -17,7 +20,10 @@ server <- function(session, input, output) {
     output_2025 <- model_2025(frokostpause, vakst, elasticitet, ledighed, holdbarhed)
     output_2060 <- model_2060(frokostpause, vakst, elasticitet, ledighed, holdbarhed)
     
-    y_range <- c(min(output_2025, output_2060, 0), max(output_2060, output_2025, 75000))
+    
+    # Create plot -------------------------------------------------------------
+    
+    y_range <- c(min(output_2025, output_2060, 0), max(output_2060, output_2025, 90000))
     
     x <- c("År 2025", "År 2060")
     y <- c(output_2025, output_2060)
@@ -49,6 +55,33 @@ server <- function(session, input, output) {
              plot_bgcolor = 'rgba(245, 246, 249, 1)',
              showlegend = FALSE) 
     
+  })
+  
+  
+  # Update sliders ----------------------------------------------------------
+  
+  observeEvent(input$scenario1, {
+    updateSliderInput(session, "slider0", value = 1.7)
+    updateSliderInput(session, "slider01", value = 1.2)
+    updateSliderInput(session, "slider02", value = -7)
+    updateSliderInput(session, "slider03", value = 2.0)
+    updateSliderInput(session, "slider04", value = 0.4)
+  })
+  
+  observeEvent(input$scenario2, {
+    updateSliderInput(session, "slider0", value = 2.3)
+    updateSliderInput(session, "slider01", value = 1.7)
+    updateSliderInput(session, "slider02", value = -5)
+    updateSliderInput(session, "slider03", value = 3.1)
+    updateSliderInput(session, "slider04", value = 0.6)
+  })
+  
+  observeEvent(input$scenario3, {
+    updateSliderInput(session, "slider0", value = 2.5)
+    updateSliderInput(session, "slider01", value = 2)
+    updateSliderInput(session, "slider02", value = -4)
+    updateSliderInput(session, "slider03", value = 3.7)
+    updateSliderInput(session, "slider04", value = 0.9)
   })
   
 }
