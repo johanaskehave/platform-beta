@@ -9,6 +9,9 @@ wellPanel(style = "background-color: #ffffff;",
           
           h4("DA har anmodet Finansministeriets om at udarbejde analysen. Det har naturligvis været et krav fra DAs side, at data, forudsætninger og algoritmer, som ligger til grund for analysen, er tilgængelige for offentligheden."),
           
-          h4("Det er også vigtigt for DA, at interesserede borgere kan arbejde videre med Finansministeriets model samt fortage følsomhedsanalyser på deres resultater. DA anvender derfor platform-beta.")
+          h4("Det er også vigtigt for DA, at interesserede borgere kan arbejde videre med Finansministeriets model samt fortage følsomhedsanalyser på deres resultater. DA anvender derfor platform-beta."),
+          
+          h4(strong("Here is the link to the github repo [link here and github logo]"))
+          
           
 )
