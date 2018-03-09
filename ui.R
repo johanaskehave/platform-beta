@@ -3,16 +3,22 @@ library(shinydashboard)
 library(plotly)
 
 ui <- dashboardPage(
-  dashboardHeader(),
+  dashboardHeader(title = "Platform beta"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Case beskrivelse", tabName = "case", icon = icon("dashboard")),
+      menuItem("About", tabName = "about", icon = icon("dashboard")),
+      menuItem("Case description", tabName = "case", icon = icon("dashboard")),
       menuItem("Playground", tabName = "playground", icon = icon("dashboard"))
     )
   ),
   
   dashboardBody(
     tabItems(
+      
+      
+      # About -------------------------------------------------------------------
+      
+      tabItem(tabName = "about", source(file.path("ui", "ui_about.R"), local = TRUE)$value),
       
       
       # Case --------------------------------------------------------------------
