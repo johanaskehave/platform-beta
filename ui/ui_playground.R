@@ -24,5 +24,23 @@ fluidRow(
                    sliderInput("slider03", "Nettoledighed efter år 2020 (%)", min = -20, max = +20, value = 3.1, step = 0.1, animate = animationOptions(interval = 300, loop = TRUE)),
                    sliderInput("slider04", "Holdbarhedsindikator (% af BNP)", min = -10, max = +10, value = 0.6, step = 0.1, animate = animationOptions(interval = 300, loop = TRUE))
          )
+  ),
+  column(width = 10, 
+         div(id="disqus_thread",
+             HTML(
+                 "<script>
+      (function() {  
+          var d = document, s = d.createElement('script');
+          
+          s.src = 'https://technovelty-com.disqus.com/embed.js';
+          
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>"
+               )
+           )
   )
 )
+
