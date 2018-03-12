@@ -1,0 +1,119 @@
+body{
+  color:#444 !important;
+  font-family:sans-serif, helvetica;
+}
+.siteTitle {
+    color: #444;
+    background-image: -webkit-linear-gradient(92deg,#b1b1b1,#000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    letter-spacing: -.05em;;
+}
+.main-wrap{
+    letter-spacing: 0.5px;
+    padding:10px 20px;
+    border-top: 3px solid #3c8dbc;
+    border-radius: 3px;
+    background-color:#ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+div .well{
+    padding:0px 19px;
+    background-color:transparent;
+    border:none;
+    webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top:-10px;
+}
+h1{
+    font-size: 35px;
+}
+div .gap-div{
+  height:5%;
+  min-height:25px;
+  max-height:40px;
+}
+rect{
+  fill:#ffffff !important;
+}
+svg .main-svg{
+  background-color: #ffffff !important;
+}
+/*Overrides of Shiny.css*/
+.shiny-input-container:not(.shiny-input-container-inline){ width:100% !important;}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.button {
+    color: #3c8dbc;
+    border: 2px solid #3c8dbc;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 25px;
+    line-height: 46px;
+    background: #ffffff96;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 0px;
+    float: right;
+    cursor:pointer;
+}
+.button:hover{
+  color:#ffffff;
+  background-color:#3c8dbc;
+}
+@media screen and (min-width:481px) and (max-width:768px){
+  .button{
+    float:none;
+    max-width:100%;
+    width:100%;
+    margin:auto;
+  }
+}
+@media screen and (max-width:479px){
+  .button {
+    float:none;
+    max-width:100%;
+    width:100%;
+    margin:auto;
+  }
+}
