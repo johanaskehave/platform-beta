@@ -43,8 +43,8 @@ output$plot1 <- renderPlotly({
            xaxis = list(title = ""),
            yaxis = list(title = "Privat beskæftigelse (antal personer)", range = y_range),
            barmode = 'stack',
-           paper_bgcolor = 'rgba(245, 246, 249, 1)',
-           plot_bgcolor = 'rgba(245, 246, 249, 1)',
+           paper_bgcolor = 'rgba(255, 255, 255, 0)',
+           plot_bgcolor = 'rgba(255, 255, 255, 0)',
            showlegend = FALSE)
 
 })
