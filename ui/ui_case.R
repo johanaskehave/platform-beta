@@ -13,7 +13,9 @@ wellPanel(
     
     h4(class="animated bounceInDown","Det er også vigtigt for DA, at interesserede borgere kan arbejde videre med Finansministeriets model samt fortage følsomhedsanalyser på deres resultater. DA anvender derfor platform-beta."),
     
-    h4(class="animated bounceInDown","Link to rå data: www.eksempel.com og link til model via repo på GitHub: www.github.com/eksempel")
+    h4(class="animated bounceInDown","Link to rå data: www.eksempel.com"),
+    h4(class="animated bounceInDown","Link til model: www.github.com/eksempel"),
+    h4(class="animated bounceInDown","Link til Playground: https://github.com/johanaskehave/platform-beta")
     
     
   )
