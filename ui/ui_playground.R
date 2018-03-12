@@ -37,7 +37,7 @@ fluidRow(
          div(class="main-wrap",
                    title = "Ændre på forudsætningerne nedenfor:",
                    sliderInput("slider0", "Øget ugentligt arbejdstid (timer)", min = 0.1, max = +5, value = 2.3, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE)),
-                   sliderInput("slider01", "Gennemsnitlig årlig vækst [BNP] (%)", min = -10, max = +10, value = 1.7, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE)),
+                   sliderInput("slider01", "Gennemsnitlig årlig vækst i BNP (%)", min = -10, max = +10, value = 1.7, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE)),
                    sliderInput("slider02", "Eksport priselasticitet (%)", min = -20, max = +20, value = -5, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE)),
                    sliderInput("slider03", "Nettoledighed efter år 2020 (%)", min = -20, max = +20, value = 3.1, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE)),
                    sliderInput("slider04", "Holdbarhedsindikator (% af BNP)", min = -10, max = +10, value = 0.6, step = 0.1, animate = animationOptions(interval = 600, loop = TRUE))
